@@ -381,6 +381,7 @@ th{
     }
     .status-pane {
         width: 0% !important;
+        display: none;
     }
 }
 
@@ -396,4 +397,13 @@ th{
     .status-pane {
         width: 30% !important;
     }
+    .modal-dialog{
+        display: none;
+    }
 }
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+}
+
