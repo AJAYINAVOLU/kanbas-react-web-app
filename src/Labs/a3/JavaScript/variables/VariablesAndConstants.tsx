@@ -5,10 +5,10 @@ function VariablesAndConstants() {
 
     return(
         <div>
-            <h2>Variables and Constants</h2>
-            functionScoped = { functionScoped }<br/>
-            blockScoped = { blockScoped }<br/>
-            constant1 = { constant1 }<br/>
+           <h4>Variables and Constants</h4>
+           functionScoped = { functionScoped }<br/>
+           blockScoped = { blockScoped }<br/>
+           constant1 = { constant1 }<br/> 
         </div>
     );
 }

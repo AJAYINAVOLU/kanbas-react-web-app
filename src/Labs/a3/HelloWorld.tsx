@@ -3,13 +3,10 @@ import Nav from "../../Nav";
 
 function HelloWorld() {
     return(
-        <div>
+        <div className="container-fluid">
             <Nav/>
-            {/*<Link to="/Labs/a3">A3</Link> |*/}
-            {/*<Link to="/Kanbas">Kanbas</Link> |*/}
-            {/*<Link to="/hello">Hello</Link> |*/}
-            <h1>Hello World!</h1>;
+            <h1>Hello World!</h1>
         </div>
-)
-};
-export default HelloWorld;
+    );
+}  
+export default HelloWorld

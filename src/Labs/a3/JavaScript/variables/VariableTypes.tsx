@@ -7,16 +7,16 @@ function VariableTypes() {
     let isString = typeof stringVariable;
     let isBoolean = typeof booleanVariable;
     return(
-        <div>
-            <h2>Variables Types</h2>
-            numberVariable = { numberVariable }<br/>
-            floatingPointNumber = { floatingPointNumber }<br/>
-            stringVariable = { stringVariable }<br/>
-            booleanVariable = { booleanVariable + "" }<br/>
-            isNumber = { isNumber }<br/>
-            isString = { isString }<br/>
-            isBoolean = { isBoolean }<br/>
-        </div>
-    );
+      <div>
+        <h4>Variables Types</h4>
+        numberVariable = { numberVariable }<br/>
+        floatingPointNumber = { floatingPointNumber }<br/>
+        stringVariable = { stringVariable }<br/>
+        booleanVariable = { booleanVariable + "" }<br/>
+        isNumber = { isNumber }<br/>
+        isString = { isString }<br/>
+        isBoolean = { isBoolean }<br/>
+      </div>
+    );  
 }
 export default VariableTypes

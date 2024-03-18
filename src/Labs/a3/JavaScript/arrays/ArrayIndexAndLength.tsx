@@ -1,13 +1,13 @@
-let numberArray1 = [1, 2, 3, 4, 5];
-const length1 = numberArray1.length;
-const index1 = numberArray1.indexOf(3);
+function ArrayIndexAndLength() {
+    let numberArray1 = [1, 2, 3, 4, 5];
+    const length1 = numberArray1.length;
+    const index1 = numberArray1.indexOf(3);
 
-function ArrayIndexAndLength(){
     return(
         <>
-            <h3>Array index and length</h3>
-            length1 = {numberArray1.length}<br/>
-            index1 = {numberArray1.indexOf(3)}<br/>
+            <h5>Array index and length</h5>
+            length1 = { length1 }<br/>
+            index1 = { index1 }<br/>
         </>
     );
 }

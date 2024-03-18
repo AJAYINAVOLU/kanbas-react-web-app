@@ -12,7 +12,7 @@ function House() {
         },
         owners: ["Alice", "Bob"],
     };
-    return (
+    return(
         <div>
             <h2>House</h2>
             <h3>bedrooms</h3>
@@ -24,4 +24,4 @@ function House() {
         </div>
     );
 }
-export default House;
+export default House
