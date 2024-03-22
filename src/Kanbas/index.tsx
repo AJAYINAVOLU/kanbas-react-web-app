@@ -15,9 +15,9 @@ function Kanbas() {
     const [_courses, setCourses] = useState<CourseType[]>(courses);               // Create _courses array state variable. Initialize with courses from the json file.
     
     const [course, setCourse] = useState({                          // Create course state variable object.
-        _id: "0", name: "New Course", number: "New Number", semester: "New Semester",
-        startDate: "2024-09-10", endDate: "2024-12-15",
-        image: "/blueBackground.jpg"
+        _id: "0", name: "Enter the new Course Name", number: "New Course Number", semester: "New Semester Name",
+        startDate: "2024-01-01", endDate: "2024-09-01",
+        image: "/ORIENT.jpg"
     });
 
     const addNewCourse = () => {                                    // Event handler to add new course.
@@ -27,7 +27,7 @@ function Kanbas() {
         setCourse({                                                 // Clear the course.
             _id: "0", name: "New Course", number: "New Number", semester: "New Semester",
             startDate: "2024-09-10", endDate: "2024-12-15",
-            image: "/blueBackground.jpg"
+            image: "/ORIENT.jpg"
         });
     };
 
@@ -44,7 +44,7 @@ function Kanbas() {
         setCourse({                                                 // Clear the course.
             _id: "0", name: "New Course", number: "New Number", semester: "New Semester",
             startDate: "2024-09-10", endDate: "2024-12-15",
-            image: "/blueBackground.jpg"
+            image: "/ORIENT.jpg"
         });
     };
 

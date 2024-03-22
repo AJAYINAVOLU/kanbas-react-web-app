@@ -12,9 +12,9 @@ function CourseNavigation() {
 
     return(
         <div className="col-md-1 col-lg-1 col-xl-1 d-none d-md-block p-0">
-            <div className="wd-course-nav sticky-top" style={{paddingLeft: "4vw"}}>
+            <div className="wd-course-nav sticky-top" style={{paddingLeft: "0vw"}}>
                 <ul id="courseNav" className="wd-navigation">
-                    <li className="wd-nowrap">{course?.startDate} {course?.name}</li>
+                    <li className="wd-nowrap">{course?.startDate} <br /> {course?.name}</li>
                     {links.map((link, index) => (
                         <li key={index} className={pathname.includes(link) ? "wd-active wd-nowrap" : "wd-nowrap"}>
                             <Link to={link}>{link}</Link>

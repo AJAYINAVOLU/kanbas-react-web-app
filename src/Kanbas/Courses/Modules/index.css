@@ -3,13 +3,13 @@
 }
 
 .wd-green-icon {
-    color: green;
+    color: lightgreen;
 }
 
 .wd-module-plus {
-    background-color: red; 
-    color: white; 
-    border-color: red;
+    background-color: lightcoral;
+    color: black;
+    border-color: black;
 }
 
 .wd-publish-all-btn {
@@ -32,12 +32,14 @@
 }
 
 .wd-modules > li {
-    background-color: lightgray;
+    background-color: lightcoral;
     border: 1px solid gray !important;
+    border-left: none !important;
 }
 
 .wd-modules > li > div {
     padding: 6px;
+    border-left: 1px solid gray !important;
 }
 
 .wd-modules > li > ul > li {
@@ -48,4 +50,14 @@
 
 .wd-modules > li {
     margin-bottom: 20px;
+}
+
+.btn-custom-blue {
+    background-color: orange;
+    border-color: black;
+}
+
+.btn-custom-red {
+    background-color: grey;
+    border-color: black;
 }

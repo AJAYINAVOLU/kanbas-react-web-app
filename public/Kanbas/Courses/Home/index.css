@@ -243,12 +243,12 @@ ul.wd-content-nav {
 }
 
 .wd-breadcrumb-navbar {
-    background-color: transparent; 
+    background-color: transparent;
     padding-left: 20px;
 }
 
 .wd-breadcrumb-link {
-    color: red; 
+    color: red;
     text-decoration: none;
 }
 
@@ -278,7 +278,7 @@ ul.wd-content-nav {
 
 .wd-three-bar-menu {
     color: red; 
-    background-color: white; 
+    background-color: white;
     border: none;
 }
 

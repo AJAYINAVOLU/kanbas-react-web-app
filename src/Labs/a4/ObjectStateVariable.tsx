@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function ObjectStateVariable() {
-    const [person, setPerson] = useState({ name: "Peter", age: 24 });
+    const [person, setPerson] = useState({ name: "Ajay Reddy", age: 24 });
     return (
         <div>
             <h3>Object State Variables</h3>

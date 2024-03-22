@@ -3,7 +3,7 @@ import { modules } from "../../Database";           // Import modules from datab
 
 const initialState = {                              // Create reducer's initial state with 
     modules: modules,                               // default modules copied from database.
-    module: { name: "New Module", description: "New Description" }     // Default module.
+    module: { name: "New Module Name", description: "New Module Description" }     // Default module.
 };
 
 const modulesSlice = createSlice({ name: "modules", initialState,   // Create slice. Name the slice. Set initial state.

@@ -25,11 +25,11 @@ function Breadcrumb({ courses }: BreadCrumbProp) {
     
     return(
         <div className="row d-none d-md-block" style={{padding: "0"}}>
-            <div className="col-12" style={{paddingLeft: "4vw"}}>
+            <div className="col-12" style={{paddingLeft: "0vw"}}>
                 <div className="row m-0">
                     <nav className="navbar wd-breadcrumb-navbar" aria-label="Small site nav bar">
                         <div className="container-fluid">
-                            <button className="wd-three-bar-menu" onClick={() => enableCourseNav()}><HiMiniBars3 /></button>
+                            <button className="wd-three-bar-menu" onClick={() => enableCourseNav()}><HiMiniBars3 size="25" /></button>
                             <GetBreadcrumb courses={courses}/>
                             <button className="btn btn-light btn-outline-dark" style={{marginTop: "14px"}}>
                                 <i className="fa-solid fa-glasses"></i> Student View

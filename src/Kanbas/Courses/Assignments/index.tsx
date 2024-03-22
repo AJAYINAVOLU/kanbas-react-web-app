@@ -46,13 +46,13 @@ function Assignments() {
         <>
             <div>
                 <div className="form-outline w-25 float-start" data-mdb-input-init>
-                    <input type="search" id="form1" className="form-control wd-nowrap mt-1" placeholder="Search for Assignment" title="Input search item."/>
+                    <input type="search" id="form1" className="form-control wd-nowrap mt-1" placeholder="Search Assignment" title="Input search item."/>
                 </div>
 
                 <div className="float-end">
-                    <button type="button" className="btn btn-light btn-outline-dark"><FaPlus /> Group</button>
-                    <button type="button" className="btn btn-light btn-outline-dark wd-add-assignment" onClick={handleAddAssign} id="AddAssignmentBtn"><FaPlus /> Assignment</button>
-                    <button type="button" className="btn btn-light btn-outline-dark"><FaEllipsisV /></button>
+                    <button type="button" className="btn btn-light btn-outline"><FaPlus /> Group</button>
+                    <button type="button" className="btn btn-light btn-outline wd-add-assignment" onClick={handleAddAssign} id="AddAssignmentBtn"><FaPlus /> Assignment</button>
+                    <button type="button" className="btn btn-light btn-outline"><FaEllipsisV /></button>
                 </div>
                 <div className="wd-float-done"></div>
             </div>
@@ -64,9 +64,9 @@ function Assignments() {
                         <RxDragHandleDots2 className="me-2" />
                         <FaCaretDown style={{paddingRight: "5px"}} /> ASSIGNMENTS
                         <span className="float-end">
-                            <span className="wd-percentage-label">100% of Total</span>
-                            <FaCheckCircle className="text-success" />
+                            <span className="wd-percentage-label">99% of Total</span>
                             <FaPlusCircle className="ms-2" onClick={handleAddAssign}  id="PlusAssignmentBtn" />
+                            <FaCheckCircle className="text-success" />
                             <FaEllipsisV className="ms-2" />
                         </span>
                     </div>
@@ -76,7 +76,7 @@ function Assignments() {
                             <li key={assignment._id} className="list-group-item wd-assignment" onClick={() => selectAssignment(assignment)} draggable="true">
                                 <RxDragHandleDots2 className="me-2" /><TbFilePencil className="wd-pencil-paper " />
                                 <span className="float-end">
-                                    <button className="btn btn-danger me-1" style={{borderRadius: "6px"}} onClick={() => handleShow(assignment)}>Delete</button> {/* Wrap reducer functions with dispatch. */}
+                                    <button className="btn btn-danger me-1" style={{borderRadius: "6px"}} onClick={() => handleShow(assignment)}>Delete Assignment</button> {/* Wrap reducer functions with dispatch. */}
 
                                     <Modal show={show} backdrop="static" aria-labelledby="contained-modal-title-vcenter" centered onHide={() => handleCloseNo()}>
                                         <Modal.Header closeButton>
@@ -101,7 +101,7 @@ function Assignments() {
                                 <Link to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`} id="OpenAssignment">
                                     <b>{assignment.title}</b><br/>
                                     <span className="wd-week-span">{assignment.subtitle}  Module |</span><br/>
-                                    <span className="wd-week-span"><b>Due: </b>{assignment.dueDate} | {assignment.points} pts</span>
+                                    <span className="wd-week-span"><b>Due Date: </b>{assignment.dueDate} | <b>Assignment Points: </b> {assignment.points} pts</span>
                                 </Link>
                             </li>
                         ))}

@@ -2,11 +2,11 @@
     float: left;
     padding-right:  var(--bs-breadcrumb-item-padding-x);
     color: var(--bs-breadcrumb-divider-color);
-    content: var(--bs-breadcrumb-divider, ">");
+    content: var(--bs-breadcrumb-divider, "->");
 }
 
 .wd-breadcrumb-navbar {
-    background-color: transparent; 
+    background-color: lightgray;
     padding-left: 20px;
 }
 
@@ -17,6 +17,6 @@
 }
 
 .wd-breadcrumb-link {
-    color: red; 
+    color: blue;
     text-decoration: none;
 }
